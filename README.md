@@ -41,7 +41,7 @@ const colorLayer = require("color-layer")
 const getStroke = (lvl) => colorLayer.default(lvl, 9);
 
 // Generate background color:
-const getBkg = (lvl) => colorLayer. default (lvl, 3);
+const getBkg = (lvl) => colorLayer.default (lvl, 3);
 
 console.log('InProgress', getStroke(194), getBkg(194));
 // "InProgress"
