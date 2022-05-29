@@ -21,6 +21,9 @@ This is a part of the [rb_colorize project (see demo)](http://rockbee.com/colori
 
 ## Usage
 
+[RunKit](https://runkit.com/embed/ug0q3wqfa3bx)
+
+
 ### Install
 
 ```
