@@ -17,7 +17,7 @@ Levels are organized from the most subtle color to more vivid color (where `1` â
 
 Level `0` returns the absolute/normalized color of a given hue, with values of saturation == 100 and lightnes == 50% for the light mode and 40% for the dark mode.
 
-This is a part of the [rb_colorize project (see demo)](rockbee.com/colorize).
+This is a part of the [rb_colorize project (see demo)](http://rockbee.com/colorize).
 
 ## Usage
 
