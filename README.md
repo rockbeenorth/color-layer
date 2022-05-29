@@ -27,6 +27,8 @@ This is a part of the [rb_colorize project (see demo)](rockbee.com/colorize).
 npm i color-layer
 ```
 
+NPM package: [https://www.npmjs.com/package/color-layer](https://www.npmjs.com/package/color-layer)
+
 ### Import
 
 ```
@@ -50,9 +52,9 @@ console.log('InProgress', getStroke(194), getBkg(194));
 ```
 
 
-## Layers
+<!-- ## Layers
 
-## Default (normalized) color
+## Default (normalized) color -->
 
 <!-- change version in package.json -->
 <!-- npm publish -->
