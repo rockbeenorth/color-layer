@@ -1,7 +1,7 @@
 {
   "name": "color-layer",
-  "version": "1.0.1",
-  "description": "Get color-layer",
+  "version": "1.0.2",
+  "description": "Generate colors for a UI. The function returns two HSL values for a given hue and layer number (for light mode and for dark mode). Designed to generate up to 10 brightness levels are enough to build most of the components such as inputs, buttons, labels, etc.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/rockbeenorth/color-layer/issues"
   },
-  "homepage": "https://github.com/rockbeenorth/color-layer#readme",
+  "homepage": "https://rockbee.com/colorize",
   "devDependencies": {
     "typescript": "4.7.2"
   }

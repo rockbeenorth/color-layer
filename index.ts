@@ -40,6 +40,15 @@ export default function (
     // lightness. Dark version gets desaturated by a darkDesaturate step value.
 
     if (level == 0) {
+
+        // Check if this is an absolute gray color
+        if (s == 0) {
+            return [
+                `hsl(${h}, 0%, 50%)`,
+                `hsl(${h}, 0%, 50%)`
+            ]
+        }
+
         return [
             `hsl(${h}, 100%, 50%)`,
             `hsl(${h}, ${100 - darkDesaturate}%, 50%)`

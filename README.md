@@ -1,6 +1,6 @@
 # color-layer
 
-Get colors for a UI for light and dark modes. Each hue has 11 layers that work together well. 10 levels is enough to build most of components such as inputs, buttons, labels, etc.
+**Generate colors for a UI. The function returns two HSL values for a given hue and layer number (for light mode and for dark mode). Designed to generate up to 10 brightness levels are enough to build most of the components such as inputs, buttons, labels, etc.**
 
 The function returns two `hsl` values: for light mode and for dark mode:
 
