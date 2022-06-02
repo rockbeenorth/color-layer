@@ -1,12 +1,13 @@
-# color-layer
+# Color Layer
 
-**Generate colors for a UI. The function returns two HSL values for a given hue and layer number (for light mode and for dark mode). Designed to generate up to 10 brightness levels are enough to build most of the components such as inputs, buttons, labels, etc.**
+**Generate colors for a UI.**
+
+The function returns two HSL values for a given hue and layer number (for light mode and for dark mode). Designed to generate up to 10 brightness levels are enough to build most of the components such as inputs, buttons, labels, etc.
 
 The function returns two `hsl` values: for light mode and for dark mode:
 
 ```
-colorLayer(h=194, layer=3)
-// ["hsl(194, 90%, 94%)", "hsl(194, 80%, 8%)"]
+colorLayer(h = 194, layer = 3) // ["hsl(194, 90%, 94%)", "hsl(194, 80%, 8%)"]
 ```
 
 Colors work well with white (`#FFFFFF`) and black (`#000000`) backgrounds.
@@ -19,41 +20,29 @@ Level `0` returns the absolute/normalized color of a given hue, with values of s
 
 This is a part of the [rb_colorize project (see demo)](http://rockbee.com/colorize).
 
-## Usage
-
-[RunKit](https://runkit.com/embed/ug0q3wqfa3bx)
-
-
 ### Install
 
+> npm i -S color-layer
+
+- [NPM package](https://www.npmjs.com/package/color-layer)
+- [RunKit](https://runkit.com/embed/ug0q3wqfa3bx)
+
+## Usage
+
+``` ts
+import colorLayer from 'color-layer';
+
+// Generate stroke color
+const stroke = (lvl) => colorLayer(lvl, 9);
+
+// Generate background color
+const background = (lvl) => colorLayer(lvl, 3);
+
+// Define your hue
+console.log(stroke(194), background(194));
+// > ["hsl(194, 90%, 55%)", "hsl(194, 80%, 47%)"]
+// > ["hsl(194, 90%, 94%)", "hsl(194, 80%, 8%)"]
 ```
-npm i color-layer
-```
-
-NPM package: [https://www.npmjs.com/package/color-layer](https://www.npmjs.com/package/color-layer)
-
-### Import
-
-```
-const colorLayer = require("color-layer")
-```
-### Examples
-
-```
-// Generate stroke color:
-const getStroke = (lvl) => colorLayer.default(lvl, 9);
-
-// Generate background color:
-const getBkg = (lvl) => colorLayer.default (lvl, 3);
-
-console.log('InProgress', getStroke(194), getBkg(194));
-// "InProgress"
-// ["hsl(194, 90%, 55%)", "hsl(194, 80%, 47%)"]
-// ["hsl(194, 90%, 94%)", "hsl(194, 80%, 8%)"]
-
-
-```
-
 
 <!-- ## Layers
 
